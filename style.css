@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: black;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-shadow: 0 0.1rem 0.5rem #073401;
+  width: 100%;
+  background: rgb(9, 242, 67);
+  transition: all 0.5s;
+  position: fixed;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navigation ul li a {
+  color: b;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: rgb(10, 70, 5);
+}
+
+.navigation i {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu .bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(9, 242, 67);
+  margin: 5px auto;
+  transition: all 0.3s;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}
+
+.home-text {
+  max-width: 37rem;
+}
+
+.home-text .text-h4 {
+  font-size: 1.5rem;
+  color: rgb(9, 242, 67);
+  margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  line-height: 7rem;
+}
+
+.home-text p {
+  margin-bottom: 4rem;
+}
+
+.home-btn {
+  padding: 15px 45px;
+  background: rgb(9, 242, 67);
+  color: black;
+  border-radius: 100px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+.home-btn:hover {
+  background: #014511;
+}
+
+.home-img img {
+  width: 100%;
+}
+
+@media (max-width: 785px) {
+  .navigation {
+    padding: 18px 20px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu.ativo .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu.ativo .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: white;
+    gap: -10px;
+    transition: 0.3s;
+  }
+
+  .nav-menu.ativo {
+    right: 0;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .home {
+    padding: 100px 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+
+  .home .text-h4 {
+    font-size: 20px;
+  }
+
+  .home .text-h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .home p {
+    font-size: 25px;
+  }
+
+  .home-img {
+    width: 120%;
+  }
+}
+
+#desenvolvido {
+  background-color: rgb(9, 242, 67, 2);
+  width: 100%;
+  height: 500px;
+}
+
+#desenvolvido {
+  background-color: rgb(9, 242, 67, 1.5);
+  width: 100%;
+  padding: 50px 0; 
+}
+
+.grid-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid-item {
+  background-color: rgba(52, 217, 66, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.img-redonda {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 76, 1, 0.5); 
+  animation: piscar 1s infinite alternate;
+}
+
+@keyframes piscar {
+  from {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); 
+  }
+  to {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.7); 
+  }
+}
+
+span {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  max-width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  color: #ffffff; 
+  padding: 20px 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px; 
+  margin-left: 15%;
+
+}
+
+.redes-sociais a {
+  margin-left: 10%; 
+  font-size: 20px; 
+}
+
+.redes-sociais a:hover {
+  color: #000000; 
+}
