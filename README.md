@@ -1,1 +1,1 @@
-![Site](https://prnt.sc/ylNpZvXqTUaP.png)
+![Site](https://imgur.com/s5F6qzt)
